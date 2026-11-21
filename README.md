@@ -1,16 +1,72 @@
-# React + Vite
+# Prostuti BD (প্রস্তুতি) — Landing Page Recreation
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+[![Live on Firebase](https://img.shields.io/badge/Live%20Demo-Firebase%20Hosting-orange?style=for-the-badge&logo=firebase)](https://prostutibd-2026.web.app)
+[![Live on GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue?style=for-the-badge&logo=github)](https://jinchuriki-7.github.io/Prostuti.bd/)
+[![React](https://img.shields.io/badge/React-19.x-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.x-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?style=for-the-badge&logo=vite)](https://vite.dev/)
 
-Currently, two official plugins are available:
+A pixel-perfect, responsive recreation of **[Prostuti BD (prostutibd.com)](https://prostutibd.com/)** — Bangladesh's premier online competitive examination and academic preparation platform.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌐 Live Website Links
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Primary Live (Firebase):** **[https://prostutibd-2026.web.app](https://prostutibd-2026.web.app)**
+- **Mirror Live (GitHub Pages):** **[https://jinchuriki-7.github.io/Prostuti.bd/](https://jinchuriki-7.github.io/Prostuti.bd/)**
+- **GitHub Repository:** **[https://github.com/Jinchuriki-7/Prostuti.bd](https://github.com/Jinchuriki-7/Prostuti.bd)**
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## ✨ Key Features & Sections
+
+- **Top Announcement Marquee:** Real-time exam batch notice and 24/7 support channel.
+- **Header & Mobile Drawer:** Responsive brand navigation with clean collapsible drawer for mobile users.
+- **Hero & Interactive Exam Simulator:** 
+  - Live model test card with real-time countdown timer (`00:44:12`) and negative marking indicator (`-০.২৫`).
+  - Interactive MCQs with instant answer validation, feedback, and NCTB textbook page citation.
+- **Achievement Counters:** ৫০,০০০+ সফল শিক্ষার্থী, ৩০,০০০+ প্রশ্নব্যাংক, ১,৫০,০০০+ মডেল টেস্ট সম্পন্ন, এবং ৪.৯/৫ রেটিং।
+- **Dynamic Track Filtering:** বিসিএস (BCS), ব্যাংক জব, প্রাথমিক সহকারী শিক্ষক ও NTRCA, বিশ্ববিদ্যালয় ভর্তি (DU, Medical, BUET), এবং এসএসসি/এইচএসসি।
+- **Platform Features Grid:** সার্ভার-টাইমার, স্বয়ংক্রিয় ভুল খাতা (Mistakes Log), ২৪/৭ এআই শিক্ষক, মূল পাঠ্যবই রেফারেন্স, দুর্বলতা অ্যানালিটিক্স, ও প্রিন্ট-রেডি ওএমআর/পিডিএফ।
+- **Feature Spotlight Demo:** Interactive tabbed demonstration of the Error Log and AI Tutor.
+- **Transparent Pricing:** এসএসসি প্রো (৳২,৩৯০), অল-অ্যাক্সেস মেম্বারশিপ (৳৯৯৯ মেগা সেভার), ও এইচএসসি প্রো (৳৩,৯৯০) সহ বিকাশ এবং নগদ ইনস্ট্যান্ট পেমেন্ট গেটওয়ে।
+- **Multi-Device Web App Banner:** Demonstrating seamless responsiveness across Mobile, Tablet, and Desktop.
+- **Student Testimonials & FAQ:** Expandable accordion addressing common exam queries.
+- **Interactive Registration Modal:** Quick 1-click modal for taking free model tests.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Framework:** React.js 19
+- **Build Tool:** Vite 8
+- **Styling:** Tailwind CSS v4 (`@tailwindcss/vite`)
+- **Icons:** Lucide React
+- **Typography:** Hind Siliguri (Google Fonts) + Plus Jakarta Sans
+- **Deployment:** Firebase Hosting & GitHub Pages
+
+---
+
+## 🚀 Local Development Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Jinchuriki-7/Prostuti.bd.git
+
+# 2. Navigate to project folder
+cd Prostuti.bd
+
+# 3. Install dependencies
+npm install
+
+# 4. Start local development server
+npm run dev
+
+# 5. Build for production
+npm run build
+```
+
+---
+
+## 📄 License
+This project is developed for educational and internship evaluation purposes. All original trademarks and content belong to [Prostuti BD](https://prostutibd.com/).
