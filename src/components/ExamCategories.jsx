@@ -94,11 +94,11 @@ export default function ExamCategories({ onOpenAuth }) {
       : examCards.filter((card) => card.category === activeCategory);
 
   return (
-    <section id="services" className="py-16 bg-white relative">
+    <section id="services" className="py-16 bg-white relative w-full overflow-hidden">
       {/* Anchor for backwards compatibility */}
       <div id="categories" className="absolute -top-20" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-10">
           <span className="text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-100/70 px-3 py-1 rounded-full">
             আমাদের সার্ভিস ও পরীক্ষা প্রস্তুতি ট্র্যাক
@@ -112,12 +112,12 @@ export default function ExamCategories({ onOpenAuth }) {
         </div>
 
         {/* Category Filters */}
-        <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar">
+        <div className="w-full max-w-full overflow-x-auto pb-4 mb-8 no-scrollbar flex items-center justify-start sm:justify-center gap-2">
           {categories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap transition-all ${
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap shrink-0 transition-all ${
                 activeCategory === cat.id
                   ? 'bg-emerald-600 text-white shadow-md shadow-emerald-700/20'
                   : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
@@ -191,8 +191,8 @@ export default function ExamCategories({ onOpenAuth }) {
         {/* ========================================================================= */}
         {/* TWO INTERNAL NAVIGATION LINKS (Services -> About Us & Services -> Contact Us) */}
         {/* ========================================================================= */}
-        <div className="mt-12 p-6 sm:p-8 bg-gradient-to-r from-emerald-50/90 via-teal-50/70 to-emerald-50/90 border border-emerald-200/90 rounded-2xl sm:rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xs">
-          <div className="space-y-1.5 text-center md:text-left">
+        <div className="mt-12 p-5 sm:p-8 bg-gradient-to-r from-emerald-50/90 via-teal-50/70 to-emerald-50/90 border border-emerald-200/90 rounded-2xl sm:rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xs w-full max-w-full overflow-hidden">
+          <div className="space-y-1.5 text-center md:text-left min-w-0">
             <div className="inline-flex items-center gap-2 text-emerald-900 font-bold text-sm sm:text-base">
               <Compass className="w-5 h-5 text-emerald-600 shrink-0" />
               <span>সার্ভিস সম্পর্কিত বিস্তারিত ও সরাসরি সহায়তা চান?</span>

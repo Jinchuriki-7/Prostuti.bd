@@ -14,7 +14,7 @@ export default function MobileStickyCTA({ onOpenAuth }) {
 
   return (
     <div
-      className="fixed bottom-0 inset-x-0 z-40 p-3 bg-white/95 backdrop-blur-md border-t border-slate-200/90 shadow-[0_-8px_25px_rgba(0,0,0,0.12)] block lg:hidden transition-transform duration-300"
+      className="fixed bottom-0 inset-x-0 z-40 p-3 bg-white/95 backdrop-blur-md border-t border-slate-200/90 shadow-[0_-8px_25px_rgba(0,0,0,0.12)] block lg:hidden transition-transform duration-300 w-full max-w-full"
       style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom, 0px))' }}
     >
       <div className="max-w-md mx-auto flex items-center gap-2.5">

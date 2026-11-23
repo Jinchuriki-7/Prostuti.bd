@@ -1,10 +1,55 @@
 @import "tailwindcss";
 
+:root {
+  color-scheme: only light !important;
+  forced-color-adjust: none !important;
+}
+
 @layer base {
   html {
     font-family: 'Hind Siliguri', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     scroll-behavior: smooth;
+    color-scheme: only light !important;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
+
+  body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #f8fafc !important;
+    color: #1e293b !important;
+    color-scheme: only light !important;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+}
+
+/* Force Light Theme across all components even when OS/Chrome forced dark mode is enabled */
+@media (prefers-color-scheme: dark) {
+  :root, html, body, #root {
+    color-scheme: only light !important;
+    background-color: #f8fafc !important;
+    color: #1e293b !important;
+  }
+}
+
+/* Hide horizontal scrollbar for mobile filters */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Custom scrollbar */
