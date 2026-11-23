@@ -18,6 +18,21 @@ A pixel-perfect, responsive recreation of **[Prostuti BD (prostutibd.com)](https
 
 ---
 
+## 🚀 Navigation & Mobile UX Updates
+
+### 1. Two Meaningful Internal Links
+Added directly inside the **Services / Exam Preparation Tracks** section (`#services`):
+- **Link 1: Services → About Us (`#about`)**: Smoothly directs candidates to the platform background, educational philosophy, and pedagogical mission.
+- **Link 2: Services → Contact Us (`#contact`)**: Instantly connects candidates to 24/7 support channels, email consultation (`support@prostutibd.com`), and office address.
+
+### 2. Mobile-Only Sticky CTA Button
+- **CTA Label:** `"Get Free Consultation"`
+- **Fixed Mobile Experience:** Positioned permanently at the bottom on mobile viewports (`fixed bottom-0 inset-x-0 z-40`), completely hidden on desktop screens (`block lg:hidden`).
+- **Smooth Navigation:** Tapping the sticky button smoothly scrolls straight to the dedicated Contact & Consultation section (`#contact`) or triggers the consultation modal.
+- **Safe-Area Protection:** Includes `calc(0.75rem + env(safe-area-inset-bottom))` padding and `pb-20 lg:pb-0` page spacing so content is never obscured.
+
+---
+
 ## ✨ Key Features & Sections
 
 - **Top Announcement Marquee:** Real-time exam batch notice and 24/7 support channel.
@@ -30,7 +45,8 @@ A pixel-perfect, responsive recreation of **[Prostuti BD (prostutibd.com)](https
 - **Platform Features Grid:** সার্ভার-টাইমার, স্বয়ংক্রিয় ভুল খাতা (Mistakes Log), ২৪/৭ এআই শিক্ষক, মূল পাঠ্যবই রেফারেন্স, দুর্বলতা অ্যানালিটিক্স, ও প্রিন্ট-রেডি ওএমআর/পিডিএফ।
 - **Feature Spotlight Demo:** Interactive tabbed demonstration of the Error Log and AI Tutor.
 - **Transparent Pricing:** এসএসসি প্রো (৳২,৩৯০), অল-অ্যাক্সেস মেম্বারশিপ (৳৯৯৯ মেগা সেভার), ও এইচএসসি প্রো (৳৩,৯৯০) সহ বিকাশ এবং নগদ ইনস্ট্যান্ট পেমেন্ট গেটওয়ে।
-- **Multi-Device Web App Banner:** Demonstrating seamless responsiveness across Mobile, Tablet, and Desktop.
+- **About Us Section:** Highlighting platform reliability, offline caching, and student success metrics.
+- **Contact & Consultation Section:** Direct email, 24/7 helpline, and consultation booking.
 - **Student Testimonials & FAQ:** Expandable accordion addressing common exam queries.
 - **Interactive Registration Modal:** Quick 1-click modal for taking free model tests.
 
