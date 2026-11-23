@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FileText, Clock, ShieldCheck, Users, ChevronRight } from 'lucide-react';
+import { FileText, Clock, ShieldCheck, Users, ChevronRight, ArrowRight, Info, Mail, Compass } from 'lucide-react';
 
 export default function ExamCategories({ onOpenAuth }) {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -94,11 +94,14 @@ export default function ExamCategories({ onOpenAuth }) {
       : examCards.filter((card) => card.category === activeCategory);
 
   return (
-    <section id="categories" className="py-16 bg-white">
+    <section id="services" className="py-16 bg-white relative">
+      {/* Anchor for backwards compatibility */}
+      <div id="categories" className="absolute -top-20" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-10">
           <span className="text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-100/70 px-3 py-1 rounded-full">
-            পরীক্ষা প্রস্তুতি ট্র্যাক
+            আমাদের সার্ভিস ও পরীক্ষা প্রস্তুতি ট্র্যাক
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900">
             যেসব পরীক্ষার পূর্ণাঙ্গ প্রস্তুতি নিতে পারবেন
@@ -108,6 +111,7 @@ export default function ExamCategories({ onOpenAuth }) {
           </p>
         </div>
 
+        {/* Category Filters */}
         <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar">
           {categories.map((cat) => (
             <button
@@ -124,6 +128,7 @@ export default function ExamCategories({ onOpenAuth }) {
           ))}
         </div>
 
+        {/* Exam Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredExams.map((exam) => (
             <div
@@ -181,6 +186,45 @@ export default function ExamCategories({ onOpenAuth }) {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* ========================================================================= */}
+        {/* TWO INTERNAL NAVIGATION LINKS (Services -> About Us & Services -> Contact Us) */}
+        {/* ========================================================================= */}
+        <div className="mt-12 p-6 sm:p-8 bg-gradient-to-r from-emerald-50/90 via-teal-50/70 to-emerald-50/90 border border-emerald-200/90 rounded-2xl sm:rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xs">
+          <div className="space-y-1.5 text-center md:text-left">
+            <div className="inline-flex items-center gap-2 text-emerald-900 font-bold text-sm sm:text-base">
+              <Compass className="w-5 h-5 text-emerald-600 shrink-0" />
+              <span>সার্ভিস সম্পর্কিত বিস্তারিত ও সরাসরি সহায়তা চান?</span>
+            </div>
+            <p className="text-xs sm:text-sm text-slate-600 max-w-xl">
+              আমাদের শিক্ষণ পদ্ধতি ও প্ল্যাটফর্ম সম্পর্কে বিস্তারিত জানতে পড়ুন অথবা সরাসরি বিশেষজ্ঞ মেন্টরদের সাথে পরামর্শের জন্য যোগাযোগ করুন।
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto shrink-0">
+            {/* Internal Link 1: Services -> About Us */}
+            <a
+              href="#about"
+              className="w-full sm:w-auto px-5 py-2.5 bg-white hover:bg-emerald-50/80 text-emerald-800 font-semibold text-xs sm:text-sm border border-emerald-300 rounded-xl transition-all shadow-xs hover:shadow flex items-center justify-center gap-2 group"
+              id="internal-link-about"
+            >
+              <Info className="w-4 h-4 text-emerald-600" />
+              <span>আমাদের সম্পর্কে (About Us)</span>
+              <ArrowRight className="w-4 h-4 text-emerald-600 group-hover:translate-x-1 transition-transform" />
+            </a>
+
+            {/* Internal Link 2: Services -> Contact Us */}
+            <a
+              href="#contact"
+              className="w-full sm:w-auto px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-semibold text-xs sm:text-sm rounded-xl transition-all shadow-md shadow-emerald-700/20 hover:shadow-lg flex items-center justify-center gap-2 group"
+              id="internal-link-contact"
+            >
+              <Mail className="w-4 h-4 text-white" />
+              <span>যোগাযোগ করুন (Contact Us)</span>
+              <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
         </div>
       </div>
     </section>

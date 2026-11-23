@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, LogIn, UserPlus, Menu, X } from 'lucide-react';
+import { BookOpen, LogIn, UserPlus, Menu, X, ArrowRight } from 'lucide-react';
 
 export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, onOpenAuth }) {
   return (
@@ -27,21 +27,24 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, onOpenAuth }
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-medium text-slate-700">
             <a href="#home" className="text-emerald-700 font-semibold hover:text-emerald-800 transition">
               হোম
             </a>
-            <a href="#categories" className="hover:text-emerald-700 transition">
-              পরীক্ষাসমূহ
+            <a href="#services" className="hover:text-emerald-700 transition">
+              সার্ভিস ও পরীক্ষাসমূহ
             </a>
             <a href="#features" className="hover:text-emerald-700 transition">
-              বিশেষ সুবিধাসমূহ
+              সুবিধাসমূহ
             </a>
             <a href="#pricing" className="hover:text-emerald-700 transition">
               প্যাকেজ ও মূল্য
             </a>
-            <a href="#testimonials" className="hover:text-emerald-700 transition">
-              মতামত
+            <a href="#about" className="hover:text-emerald-700 transition font-medium">
+              আমাদের সম্পর্কে
+            </a>
+            <a href="#contact" className="hover:text-emerald-700 transition font-medium">
+              যোগাযোগ
             </a>
             <a href="#faq" className="hover:text-emerald-700 transition">
               প্রশ্নোত্তর
@@ -90,18 +93,18 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, onOpenAuth }
             হোম
           </a>
           <a
-            href="#categories"
+            href="#services"
             onClick={() => setMobileMenuOpen(false)}
             className="block py-2 text-base font-medium text-slate-700 hover:text-emerald-700"
           >
-            পরীক্ষাসমূহ
+            সার্ভিস ও পরীক্ষাসমূহ
           </a>
           <a
             href="#features"
             onClick={() => setMobileMenuOpen(false)}
             className="block py-2 text-base font-medium text-slate-700 hover:text-emerald-700"
           >
-            বিশেষ সুবিধাসমূহ
+            সুবিধাসমূহ
           </a>
           <a
             href="#pricing"
@@ -111,11 +114,18 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, onOpenAuth }
             প্যাকেজ ও মূল্য
           </a>
           <a
-            href="#testimonials"
+            href="#about"
             onClick={() => setMobileMenuOpen(false)}
             className="block py-2 text-base font-medium text-slate-700 hover:text-emerald-700"
           >
-            মতামত
+            আমাদের সম্পর্কে (About Us)
+          </a>
+          <a
+            href="#contact"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block py-2 text-base font-medium text-slate-700 hover:text-emerald-700"
+          >
+            যোগাযোগ (Contact Us)
           </a>
           <a
             href="#faq"
