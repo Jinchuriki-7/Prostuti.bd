@@ -20,6 +20,12 @@ A pixel-perfect, responsive recreation of **[Prostuti BD (prostutibd.com)](https
 
 ## 🚀 Navigation & Mobile UX Updates
 
+### 📱 Task 2: সার্ভিস পেজের মোবাইল ম্যাচ (Mobile Usability & Responsiveness)
+Day 2-এর সার্ভিস পেজটি বাস্তব মোবাইল ডিভাইসে পুঙ্খানুপুঙ্খভাবে পরীক্ষা করে নিম্নলিখিত বাগগুলো সমাধান করা হয়েছে:
+- **হরিজন্টাল ওভারফ্লো ও পেজ জুম-আউট সমাধান (Zero Horizontal Overflow):** ক্যাটাগরি ফিল্টার ও নোটিস বারে কন্টেইনার ওভারফ্লো ফিক্স করে ৩২০px–৪১২px সব মোবাইল স্ক্রিনে পারফেক্ট ফুল-উইডথ ফিট নিশ্চিত করা হয়েছে।
+- **অটো ডার্ক মোড কালার ইনভার্সন সমাধান (Consistent Light Theme):** `<meta name="color-scheme" content="only light" />` ও CSS রুল দিয়ে ব্রাউজারের ফোর্সড ডার্ক মোড বন্ধ করে আসল লাইট এমারেল্ড থিম বজায় রাখা হয়েছে।
+- **মোবাইল স্টিকি CTA ও সেইফ-এরিয়া স্পেসিং:** মোবাইল স্ক্রিনে নিচে ফিক্সড স্টিকি বাটন ("Get Free Consultation") কন্টেন্টকে ওভারল্যাপ না করার জন্য `pb-20` ও `safe-area-inset-bottom` নিশ্চিত করা হয়েছে।
+
 ### 1. Two Meaningful Internal Links
 Added directly inside the **Services / Exam Preparation Tracks** section (`#services`):
 - **Link 1: Services → About Us (`#about`)**: Smoothly directs candidates to the platform background, educational philosophy, and pedagogical mission.
